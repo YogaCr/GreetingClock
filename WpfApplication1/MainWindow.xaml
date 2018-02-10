@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Jam" Height="350" Width="525" Visibility="Visible" Background="{x:Null}" Foreground="{x:Null}" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" Icon="Clock.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="346*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="110*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="535" Source="bg.png" Grid.ColumnSpan="3" Margin="0,0,-10,0"/>
+        <Label x:Name="jam" Content="00" HorizontalAlignment="Left" Margin="57,284,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Consolas" Height="66" Width="63"/>
+        <Label x:Name="menit" Content="00" HorizontalAlignment="Left" Margin="22,284,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Consolas" Grid.Column="2" Height="66" Width="63"/>
+        <Label x:Name="Ucapan" Content="Selamat Datang" Margin="320,23,10,0" VerticalAlignment="Top" Height="53" Width="195" Grid.ColumnSpan="3" FontSize="16" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Padding="5,0"/>
+        <Label x:Name="label" Content="Semoga harimu menyenangkan" HorizontalAlignment="Left" Margin="0,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="20" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="-0.824,-0.121" Click="tutupform" Height="20">
+            <Button.Background>
+                <ImageBrush ImageSource="tutup.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minimizebutton" Content="Button" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="20" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="20" Click="minimize">
+            <Button.Background>
+                <ImageBrush ImageSource="minimize-icon-29.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
